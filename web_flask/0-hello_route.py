@@ -1,5 +1,5 @@
 #!usr/bin/python3
-''' flask web app'''
+"""flask web app"""
 from flask import Flask
 
 app = Flask(__name__)
@@ -10,5 +10,5 @@ def hello():
     return 'Hello HBNB!'
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5000)
 
